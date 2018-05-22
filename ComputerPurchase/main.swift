@@ -13,20 +13,18 @@ while true {
     guard let input = readLine() else{
         continue
     }
-    
     guard let intInput = Int(input) else {
         continue
     }
-    
     if intInput < 0 || intInput > 10 {
         continue
     }
-    
     givenSpecs = intInput
     break
 }
 
-// PROCESS & OUTPUT
+// PROCESS
+
 var bestComputerSpec = 0
 var bestComputerName = ""
 // Collect the list of computer specs here
